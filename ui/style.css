@@ -1,0 +1,71 @@
+:root {
+  /* colors */
+  --main_color: #121723;
+  --main_light_color: #292E39;
+  --secondary_color: #FFFFFF;
+  --thrid_color: #E6E8EC;
+  --thrid_40_color: rgba(230, 232, 236, 0.4);
+  --description_color: #A1A6B4;
+  --interactive_base_color: #6D31EE;
+  --interactive_shade_color: #AA9DFA;
+  --interactive_shade_first_color: #D2D5DD;
+  --interactive_accent_color: #4F28A5;
+  --alarm_color: #D52B1E;
+  --promo_base_color: #BB973E;
+  --promo_second_color: #F0D288;
+  /* sizes */
+  --container_size: 1610px;
+  /* base-style */
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+.visually-hidden {
+  position: absolute !important;
+  padding:0 !important;
+  border:0 !important;
+  width: 1px !important;
+  height: 1px !important;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.container {
+  position: relative;
+  width: var(--container_size);
+  margin: 0 auto;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.accordeon__bottom {
+  display: none;
+}
+
+.form__field {
+  position: relative;
+}
+
+.form__alarm {
+  position: absolute;
+}
