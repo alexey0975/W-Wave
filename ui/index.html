@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UI-Kit</title>
   <link rel="stylesheet" href="../styles/libs/normalize.css">
+  <link rel="stylesheet" href="../styles/fonts.css">
   <link rel="stylesheet" href="wrappers.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,23 +16,23 @@
   <div class="container">
     <div class="header-link-wrapper wrapper">
       <a href="#" class="link header-link">Авторы</a>
-      <a href="#" class="link header-link header-link_hover">Авторы</a>
-      <a href="#" class="link header-link header-link_focus">Авторы</a>
-      <a href="#" class="link header-link header-link_active">Авторы</a>
+      <a href="#" class="link header-link link_hover">Авторы</a>
+      <a href="#" class="link header-link link_focus">Авторы</a>
+      <a href="#" class="link header-link link_active">Авторы</a>
     </div>
 
     <div class="btn_hero-wrapper wrapper">
-      <button class="btn btn_hero">Слушать эфир</button>
-      <button class="btn btn_hero btn_hero_hover">Слушать эфир</button>
-      <button class="btn btn_hero btn_hero_focus">Слушать эфир</button>
-      <button class="btn btn_hero btn_hero_active">Слушать эфир</button>
+      <button class="btn">Слушать эфир</button>
+      <button class="btn btn_hover">Слушать эфир</button>
+      <button class="btn btn_focus">Слушать эфир</button>
+      <button class="btn btn_active">Слушать эфир</button>
     </div>
 
     <div class="btn_secondary-wrapper wrapper">
-      <button class="btn btn_secondary">Слушать эфир</button>
-      <button class="btn btn_secondary btn_secondary_hover">Слушать эфир</button>
-      <button class="btn btn_secondary btn_secondary_focus">Слушать эфир</button>
-      <button class="btn btn_secondary btn_secondary_active">Слушать эфир</button>
+      <button class="btn btn_secondary">Ещё подкасты</button>
+      <button class="btn btn_secondary btn_secondary_hover">Ещё подкасты</button>
+      <button class="btn btn_secondary btn_secondary_focus">Ещё подкасты</button>
+      <button class="btn btn_secondary btn_secondary_active">Ещё подкасты</button>
     </div>
 
     <div class="link-wrapper wrapper">
@@ -41,102 +42,331 @@
       <a href="#" class="link link_active">Новости</a>
     </div>
 
-    <div class="secrch-wrapper wrapper">
-      <div class="secrch">
-        <input type="text" class="search__field">
-        <button class="search__btn">Найти</button>
+    <div class="search-wrapper wrapper">
+      <div class="search">
+        <input type="text" class="search__field" placeholder="Поиск по сайту">
+        <button class="search__btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
       </div>
 
-      <div class="secrch secrch_hover">
-        <input type="text" class="search__field">
-        <button class="search__btn">Найти</button>
+      <div class="search search_hover">
+        <input type="text" class="search__field" placeholder="Поиск по сайту">
+        <button class="search__btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
       </div>
 
-      <div class="secrch secrch_focus">
-        <input type="text" class="search__field">
-        <button class="search__btn">Найти</button>
+      <div class="search search_focus">
+        <input type="text" class="search__field" placeholder="Поиск по сайту">
+        <button class="search__btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
       </div>
 
-      <div class="secrch secrch_active">
-        <input type="text" class="search__field">
-        <button class="search__btn">Найти</button>
+      <div class="search search_active">
+        <input type="text" class="search__field" placeholder="Поиск по сайту">
+        <button class="search__btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="search search_open">
+        <input type="text" class="search__field" placeholder="Поиск по сайту">
+        <button class="search__btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
       </div>
     </div>
 
-    <div class="btn_accent-wrapper wrapper">
-      <button class="btn btn_accent">Вход</button>
-      <button class="btn btn_accent btn_accent_hover">Вход</button>
-      <button class="btn btn_accent btn_accent_focus">Вход</button>
-      <button class="btn btn_accent btn_accent_active">Вход</button>
+    <div class="btn_strong-wrapper wrapper">
+      <button class="btn btn_size_s btn_style_strong btn_theme_archive">
+        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.5 1.5L2 5.25L9.5 9L17 5.25L9.5 1.5Z" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M2 12.75L9.5 16.5L17 12.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M2 9L9.5 12.75L17 9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+        <span>Вход</span>
+      </button>
+      <button class="btn btn_size_s btn_style_strong btn_style_strong_hover">
+        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.5 1.5L2 5.25L9.5 9L17 5.25L9.5 1.5Z" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M2 12.75L9.5 16.5L17 12.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M2 9L9.5 12.75L17 9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+        <span>Вход</span>
+      </button>
+      <button class="btn btn_size_s btn_style_strong btn_style_strong_focus">
+        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.5 1.5L2 5.25L9.5 9L17 5.25L9.5 1.5Z" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M2 12.75L9.5 16.5L17 12.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M2 9L9.5 12.75L17 9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+        <span>Вход</span>
+      </button>
+      <button class="btn btn_size_s btn_style_strong btn_style_strong_active">
+        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.5 1.5L2 5.25L9.5 9L17 5.25L9.5 1.5Z" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M2 12.75L9.5 16.5L17 12.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M2 9L9.5 12.75L17 9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+        <span>Вход</span>
+      </button>
     </div>
 
     <div class="social-wrapper wrapper">
-      <a href="#" class="social social_ok">Одноклассники</a>
-      <a href="#" class="social social_ok social_hover">Одноклассники</a>
-      <a href="#" class="social social_ok social_focus">Одноклассники</a>
-      <a href="#" class="social social_ok social_active">Одноклассники</a>
+      <a href="#" target="_blank" class="icon-btn icon-btn_size_m" aria-label="Одноклассники">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8.23378 6.14624C8.23378 7.0928 9.05694 7.86023 10.0724 7.86023C11.088 7.86023 11.9111 7.0928 11.9111 6.14624C11.9111 5.19968 11.088 4.43231 10.0724 4.43231C9.05694 4.43231 8.23378 5.19968 8.23378 6.14624Z" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M6 0C2.68629 0 0 2.68629 0 6V14C0 17.3137 2.68629 20 6 20H14C17.3137 20 20 17.3137 20 14V6C20 2.68629 17.3137 0 14 0H6ZM5.62436 6.14617C5.62436 3.85633 7.61571 2 10.0724 2C12.5292 2 14.5206 3.85633 14.5206 6.14617C14.5206 8.43606 12.5292 10.2925 10.0724 10.2925C7.61571 10.2925 5.62436 8.43606 5.62436 6.14617ZM14.5472 12.4252C14.4907 12.4674 13.4236 13.2535 11.6427 13.5916L14.3307 16.0748C14.8034 16.5147 14.804 17.2285 14.3321 17.6691C13.8602 18.1097 13.0946 18.1104 12.6216 17.6704L10.012 15.3016L7.64177 17.6552C7.4046 17.8846 7.08805 18 6.77109 18C6.46897 18 6.16645 17.8952 5.93169 17.6842C5.45075 17.252 5.43691 16.5384 5.90062 16.0902L8.4519 13.6048C6.62134 13.2746 5.51009 12.468 5.45295 12.4252C4.93171 12.0357 4.84811 11.3262 5.26591 10.8404C5.6839 10.3547 6.44492 10.2767 6.96616 10.6662C6.97719 10.6744 8.13936 11.4883 10.012 11.4895C11.8847 11.4883 13.0228 10.6744 13.0338 10.6662C13.5551 10.2767 14.3163 10.3547 14.7341 10.8404C15.1519 11.3262 15.0683 12.0357 14.5472 12.4252Z" />
+        </svg>
+      </a>
+
+      <a href="#" target="_blank" class="icon-btn icon-btn_size_m icon-btn_hover" aria-label="Одноклассники">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8.23378 6.14624C8.23378 7.0928 9.05694 7.86023 10.0724 7.86023C11.088 7.86023 11.9111 7.0928 11.9111 6.14624C11.9111 5.19968 11.088 4.43231 10.0724 4.43231C9.05694 4.43231 8.23378 5.19968 8.23378 6.14624Z" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M6 0C2.68629 0 0 2.68629 0 6V14C0 17.3137 2.68629 20 6 20H14C17.3137 20 20 17.3137 20 14V6C20 2.68629 17.3137 0 14 0H6ZM5.62436 6.14617C5.62436 3.85633 7.61571 2 10.0724 2C12.5292 2 14.5206 3.85633 14.5206 6.14617C14.5206 8.43606 12.5292 10.2925 10.0724 10.2925C7.61571 10.2925 5.62436 8.43606 5.62436 6.14617ZM14.5472 12.4252C14.4907 12.4674 13.4236 13.2535 11.6427 13.5916L14.3307 16.0748C14.8034 16.5147 14.804 17.2285 14.3321 17.6691C13.8602 18.1097 13.0946 18.1104 12.6216 17.6704L10.012 15.3016L7.64177 17.6552C7.4046 17.8846 7.08805 18 6.77109 18C6.46897 18 6.16645 17.8952 5.93169 17.6842C5.45075 17.252 5.43691 16.5384 5.90062 16.0902L8.4519 13.6048C6.62134 13.2746 5.51009 12.468 5.45295 12.4252C4.93171 12.0357 4.84811 11.3262 5.26591 10.8404C5.6839 10.3547 6.44492 10.2767 6.96616 10.6662C6.97719 10.6744 8.13936 11.4883 10.012 11.4895C11.8847 11.4883 13.0228 10.6744 13.0338 10.6662C13.5551 10.2767 14.3163 10.3547 14.7341 10.8404C15.1519 11.3262 15.0683 12.0357 14.5472 12.4252Z" />
+        </svg>
+      </a>
+
+      <a href="#" target="_blank" class="icon-btn icon-btn_size_m icon-btn_focus" aria-label="Одноклассники">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8.23378 6.14624C8.23378 7.0928 9.05694 7.86023 10.0724 7.86023C11.088 7.86023 11.9111 7.0928 11.9111 6.14624C11.9111 5.19968 11.088 4.43231 10.0724 4.43231C9.05694 4.43231 8.23378 5.19968 8.23378 6.14624Z" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M6 0C2.68629 0 0 2.68629 0 6V14C0 17.3137 2.68629 20 6 20H14C17.3137 20 20 17.3137 20 14V6C20 2.68629 17.3137 0 14 0H6ZM5.62436 6.14617C5.62436 3.85633 7.61571 2 10.0724 2C12.5292 2 14.5206 3.85633 14.5206 6.14617C14.5206 8.43606 12.5292 10.2925 10.0724 10.2925C7.61571 10.2925 5.62436 8.43606 5.62436 6.14617ZM14.5472 12.4252C14.4907 12.4674 13.4236 13.2535 11.6427 13.5916L14.3307 16.0748C14.8034 16.5147 14.804 17.2285 14.3321 17.6691C13.8602 18.1097 13.0946 18.1104 12.6216 17.6704L10.012 15.3016L7.64177 17.6552C7.4046 17.8846 7.08805 18 6.77109 18C6.46897 18 6.16645 17.8952 5.93169 17.6842C5.45075 17.252 5.43691 16.5384 5.90062 16.0902L8.4519 13.6048C6.62134 13.2746 5.51009 12.468 5.45295 12.4252C4.93171 12.0357 4.84811 11.3262 5.26591 10.8404C5.6839 10.3547 6.44492 10.2767 6.96616 10.6662C6.97719 10.6744 8.13936 11.4883 10.012 11.4895C11.8847 11.4883 13.0228 10.6744 13.0338 10.6662C13.5551 10.2767 14.3163 10.3547 14.7341 10.8404C15.1519 11.3262 15.0683 12.0357 14.5472 12.4252Z" />
+        </svg>
+      </a>
+
+      <a href="#" target="_blank" class="icon-btn icon-btn_size_m icon-btn_active" aria-label="Одноклассники">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8.23378 6.14624C8.23378 7.0928 9.05694 7.86023 10.0724 7.86023C11.088 7.86023 11.9111 7.0928 11.9111 6.14624C11.9111 5.19968 11.088 4.43231 10.0724 4.43231C9.05694 4.43231 8.23378 5.19968 8.23378 6.14624Z" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M6 0C2.68629 0 0 2.68629 0 6V14C0 17.3137 2.68629 20 6 20H14C17.3137 20 20 17.3137 20 14V6C20 2.68629 17.3137 0 14 0H6ZM5.62436 6.14617C5.62436 3.85633 7.61571 2 10.0724 2C12.5292 2 14.5206 3.85633 14.5206 6.14617C14.5206 8.43606 12.5292 10.2925 10.0724 10.2925C7.61571 10.2925 5.62436 8.43606 5.62436 6.14617ZM14.5472 12.4252C14.4907 12.4674 13.4236 13.2535 11.6427 13.5916L14.3307 16.0748C14.8034 16.5147 14.804 17.2285 14.3321 17.6691C13.8602 18.1097 13.0946 18.1104 12.6216 17.6704L10.012 15.3016L7.64177 17.6552C7.4046 17.8846 7.08805 18 6.77109 18C6.46897 18 6.16645 17.8952 5.93169 17.6842C5.45075 17.252 5.43691 16.5384 5.90062 16.0902L8.4519 13.6048C6.62134 13.2746 5.51009 12.468 5.45295 12.4252C4.93171 12.0357 4.84811 11.3262 5.26591 10.8404C5.6839 10.3547 6.44492 10.2767 6.96616 10.6662C6.97719 10.6744 8.13936 11.4883 10.012 11.4895C11.8847 11.4883 13.0228 10.6744 13.0338 10.6662C13.5551 10.2767 14.3163 10.3547 14.7341 10.8404C15.1519 11.3262 15.0683 12.0357 14.5472 12.4252Z" />
+        </svg>
+      </a>
     </div>
 
     <div class="social-wrapper social-wrapper-2 wrapper">
-      <a href="#" class="social social_youtube">Youtube</a>
-      <a href="#" class="social social_youtube social_hover">Youtube</a>
-      <a href="#" class="social social_youtube social_focus">Youtube</a>
-      <a href="#" class="social social_youtube social_active">Youtube</a>
+      <a href="#" target="_blank" class="icon-btn icon-btn_size_m" aria-label="Youtube">
+        <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19.543 2.498C20 4.28 20 8 20 8C20 8 20 11.72 19.543 13.502C19.289 14.487 18.546 15.262 17.605 15.524C15.896 16 10 16 10 16C10 16 4.107 16 2.395 15.524C1.45 15.258 0.708 14.484 0.457 13.502C2.98023e-08 11.72 0 8 0 8C0 8 2.98023e-08 4.28 0.457 2.498C0.711 1.513 1.454 0.738 2.395 0.476C4.107 -1.78814e-07 10 0 10 0C10 0 15.896 -1.78814e-07 17.605 0.476C18.55 0.742 19.292 1.516 19.543 2.498ZM8 11.5L14 8L8 4.5V11.5Z" />
+        </svg>
+      </a>
+
+      <a href="#" target="_blank" class="icon-btn icon-btn_size_m icon-btn_hover" aria-label="Youtube">
+        <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19.543 2.498C20 4.28 20 8 20 8C20 8 20 11.72 19.543 13.502C19.289 14.487 18.546 15.262 17.605 15.524C15.896 16 10 16 10 16C10 16 4.107 16 2.395 15.524C1.45 15.258 0.708 14.484 0.457 13.502C2.98023e-08 11.72 0 8 0 8C0 8 2.98023e-08 4.28 0.457 2.498C0.711 1.513 1.454 0.738 2.395 0.476C4.107 -1.78814e-07 10 0 10 0C10 0 15.896 -1.78814e-07 17.605 0.476C18.55 0.742 19.292 1.516 19.543 2.498ZM8 11.5L14 8L8 4.5V11.5Z" />
+        </svg>
+      </a>
+
+      <a href="#" target="_blank" class="icon-btn icon-btn_size_m icon-btn_focus" aria-label="Youtube">
+        <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19.543 2.498C20 4.28 20 8 20 8C20 8 20 11.72 19.543 13.502C19.289 14.487 18.546 15.262 17.605 15.524C15.896 16 10 16 10 16C10 16 4.107 16 2.395 15.524C1.45 15.258 0.708 14.484 0.457 13.502C2.98023e-08 11.72 0 8 0 8C0 8 2.98023e-08 4.28 0.457 2.498C0.711 1.513 1.454 0.738 2.395 0.476C4.107 -1.78814e-07 10 0 10 0C10 0 15.896 -1.78814e-07 17.605 0.476C18.55 0.742 19.292 1.516 19.543 2.498ZM8 11.5L14 8L8 4.5V11.5Z" />
+        </svg>
+      </a>
+
+      <a href="#" target="_blank" class="icon-btn icon-btn_size_m icon-btn_active" aria-label="Youtube">
+        <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19.543 2.498C20 4.28 20 8 20 8C20 8 20 11.72 19.543 13.502C19.289 14.487 18.546 15.262 17.605 15.524C15.896 16 10 16 10 16C10 16 4.107 16 2.395 15.524C1.45 15.258 0.708 14.484 0.457 13.502C2.98023e-08 11.72 0 8 0 8C0 8 2.98023e-08 4.28 0.457 2.498C0.711 1.513 1.454 0.738 2.395 0.476C4.107 -1.78814e-07 10 0 10 0C10 0 15.896 -1.78814e-07 17.605 0.476C18.55 0.742 19.292 1.516 19.543 2.498ZM8 11.5L14 8L8 4.5V11.5Z" />
+        </svg>
+      </a>
     </div>
 
     <div class="play_small-wrapper wrapper">
-      <button class="btn play play_small">Play</button>
-      <button class="btn play play_small play_small_hover">Play</button>
-      <button class="btn play play_small play_small_focus">Play</button>
-      <button class="btn play play_small play_small_active">Play</button>
+      <button class="icon-btn icon-btn_size_m" aria-label="Воспроизвести">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" />
+        </svg>
+      </button>
+      <button class="icon-btn icon-btn_size_m icon-btn_hover">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" />
+        </svg>
+      </button>
+      <button class="icon-btn icon-btn_size_m icon-btn_focus">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" />
+        </svg>
+      </button>
+      <button class="icon-btn icon-btn_size_m icon-btn_active">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" />
+        </svg>
+      </button>
+      <button class="icon-btn icon-btn_size_m" aria-label="Пауза">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0Z" />
+          <rect x="7" y="6" width="2" height="8" rx="1" fill="white" />
+          <rect x="11" y="6" width="2" height="8" rx="1" fill="white" />
+        </svg>
+      </button>
     </div>
 
     <div class="btn_action-wrapper wrapper">
-      <button class="btn btn_action btn_like">Лайк</button>
-      <button class="btn btn_action btn_like btn_action_hover">Лайк</button>
-      <button class="btn btn_action btn_like btn_action_focus">Лайк</button>
-      <button class="btn btn_action btn_like btn_action_active">Лайк</button>
+      <button class="action__btn action__btn_like icon-btn">
+        <span class="action__count">24</span>
+      </button>
+
+      <button class="action__btn action__btn_like icon-btn action__btn_hover">
+        <span class="action__count">24</span>
+      </button>
+
+      <button class="action__btn action__btn_like icon-btn action__btn_focus">
+        <span class="action__count">24</span>
+      </button>
+
+      <button class="action__btn action__btn_like icon-btn action__btn_like_active action__btn_active">
+        <span class="action__count">25</span>
+      </button>
     </div>
 
     <div class="btn_action-wrapper btn_action-wrapper-2 wrapper">
-      <button class="btn btn_action btn_share">Поделиться</button>
-      <button class="btn btn_action btn_share btn_action_hover">Поделиться</button>
-      <button class="btn btn_action btn_share btn_action_focus">Поделиться</button>
-      <button class="btn btn_action btn_share btn_action_active">Поделиться</button>
+      <button class="action__btn action__btn_share icon-btn">
+        <span class="action__count">24</span>
+      </button>
+
+      <button class="action__btn action__btn_share icon-btn action__btn_hover">
+        <span class="action__count">24</span>
+      </button>
+
+      <button class="action__btn action__btn_share icon-btn action__btn_focus">
+        <span class="action__count">24</span>
+      </button>
+
+      <button class="action__btn action__btn_share icon-btn action__btn_share_active action__btn_active">
+        <span class="action__count">25</span>
+      </button>
     </div>
 
     <div class="play_big-wrapper wrapper">
-      <button class="btn play play_big">Play</button>
-      <button class="btn play play_big play_big_hover">Play</button>
-      <button class="btn play play_big play_big_focus">Play</button>
-      <button class="btn play play_big play_big_active">Play</button>
+      <button class="icon-btn icon-btn_size_l">
+        <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1.69238 15.7965L11.5716 8.79964C12.1428 8.39982 12.1428 7.60018 11.5716 7.20036L1.69238 0.203465C0.994271 -0.296313 0 0.183473 0 1.00311V14.9969C0 15.8165 0.994271 16.2963 1.69238 15.7965Z" />
+        </svg>
+      </button>
+
+      <button class="icon-btn icon-btn_size_l">
+        <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1.69238 15.7965L11.5716 8.79964C12.1428 8.39982 12.1428 7.60018 11.5716 7.20036L1.69238 0.203465C0.994271 -0.296313 0 0.183473 0 1.00311V14.9969C0 15.8165 0.994271 16.2963 1.69238 15.7965Z" />
+        </svg>
+      </button>
+
+      <button class="icon-btn icon-btn_size_l">
+        <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1.69238 15.7965L11.5716 8.79964C12.1428 8.39982 12.1428 7.60018 11.5716 7.20036L1.69238 0.203465C0.994271 -0.296313 0 0.183473 0 1.00311V14.9969C0 15.8165 0.994271 16.2963 1.69238 15.7965Z" />
+        </svg>
+      </button>
+
+      <button class="icon-btn icon-btn_size_l">
+        <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1.69238 15.7965L11.5716 8.79964C12.1428 8.39982 12.1428 7.60018 11.5716 7.20036L1.69238 0.203465C0.994271 -0.296313 0 0.183473 0 1.00311V14.9969C0 15.8165 0.994271 16.2963 1.69238 15.7965Z" />
+        </svg>
+      </button>
+
+      <button class="icon-btn icon-btn_size_l">
+        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="2" height="18" rx="1" />
+          <rect x="8" width="2" height="18" rx="1" />
+        </svg>
+      </button>
     </div>
 
     <div class="btn_close-wrapper wrapper">
-      <button class="btn btn_close">Закрыть</button>
-      <button class="btn btn_close btn_close_hover">Закрыть</button>
-      <button class="btn btn_close btn_close_focus">Закрыть</button>
-      <button class="btn btn_close btn_close_active">Закрыть</button>
+      <button class="icon-btn icon-btn_size_l icon-btn_close">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.6777 2L2 19.6777M19.6777 19.6777L2 2" stroke-width="3" />
+        </svg>
+      </button>
+
+      <button class="icon-btn icon-btn_size_l icon-btn_close">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.6777 2L2 19.6777M19.6777 19.6777L2 2" stroke-width="3" />
+        </svg>
+      </button>
+
+      <button class="icon-btn icon-btn_size_l icon-btn_close">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.6777 2L2 19.6777M19.6777 19.6777L2 2" stroke-width="3" />
+        </svg>
+      </button>
+
+      <button class="icon-btn icon-btn_size_l icon-btn_close">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.6777 2L2 19.6777M19.6777 19.6777L2 2" stroke-width="3" />
+        </svg>
+      </button>
     </div>
 
     <div class="link_color-wrapper wrapper">
-      <a href="#" class="link link_color">изданием</a>
-      <a href="#" class="link link_color link_color_hover">изданием</a>
-      <a href="#" class="link link_color link_color_focus">изданием</a>
-      <a href="#" class="link link_color link_color_active">изданием</a>
+      <a href="#" class="link link_inline">изданием</a>
+      <a href="#" class="link link_inline link_inline_hover">изданием</a>
+      <a href="#" class="link link_inline link_inline_focus">изданием</a>
+      <a href="#" class="link link_inline link_inline_active">изданием</a>
     </div>
 
     <div class="link_arrow-wrapper wrapper">
       <a href="#" class="link link_arrow">Подробнее</a>
-      <a href="#" class="link link_arrow link_arrow_hover">Подробнее</a>
-      <a href="#" class="link link_arrow link_arrow_focus">Подробнее</a>
-      <a href="#" class="link link_arrow link_arrow_active">Подробнее</a>
+      <a href="#" class="link link_arrow link_arrow_hover link_hover">Подробнее</a>
+      <a href="#" class="link link_arrow link_arrow_focus link_focus">Подробнее</a>
+      <a href="#" class="link link_arrow link_arrow_active link_active">Подробнее</a>
     </div>
 
     <div class="mark-wrapper wrapper">
-      <div class="mark mark_rus">Россия</div>
-      <div class="mark mark_gbr">Великобритания</div>
-      <div class="mark mark_usa">США</div>
+      <div class="country country_rus">Россия</div>
+      <div class="country country_gbr">Великобритания</div>
+      <div class="country country_usa">США</div>
     </div>
 
     <div class="soundbar-wrapper wrapper">
@@ -144,27 +374,39 @@
         <div class="soundbar__cover"></div>
 
         <div class="soundbar__inner">
-          <div class="sooundbar__content">
-            <time class="soundbar__time" datetime="15:43">15:43</time>
-            <h3 class="soundbar__title">Европа. XIX век</h3>
-            <p class="soundbar__descr">Дмитрий Гутенберг</p>
-            <button class="btn btn_play">Слушать</button>
+          <div class="soundbar__content">
+            <div class="soundbar__info">
+              <h3 class="soundbar__title">Творческие планы</h3>
+              <p class="soundbar__descr">Дмитрий Госсен</p>
+              <small class="soundbar__length">3:43</small>
+              <time class="soundbar__date" datetime="2022-07-14">14&nbsp;июня</time>
+            </div>
+
+            <button class="soundbar__btn icon-btn icon-btn_size_l">
+              <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.69238 15.7965L11.5716 8.79964C12.1428 8.39982 12.1428 7.60018 11.5716 7.20036L1.69238 0.203465C0.994271 -0.296313 0 0.183473 0 1.00311V14.9969C0 15.8165 0.994271 16.2963 1.69238 15.7965Z" />
+              </svg>
+            </button>
           </div>
 
-          <ul class="controls soundbar__controls">
-            <li class="controls__item">
-              <button class="btn btn_action btn_summary">Прослушали</button>
-              <span class="controls__count">258</span>
+          <ul class="list soundbar__action-list">
+            <li class="soundbar__action action">
+              <button class="icon-btn action__btn">
+                <span class="action__count">307</span>
+              </button>
             </li>
 
-            <li class="controls__item">
-              <button class="btn btn_action btn_like">Нравится</button>
-              <span class="controls__count">104</span>
+            <li class="soundbar__action action">
+              <button class="icon-btn action__btn action__btn_like">
+                <span class="action__count">24</span>
+              </button>
             </li>
 
-            <li class="controls__item">
-              <button class="btn btn_action btn_share">Поделиться</button>
-              <span class="controls__count">68</span>
+            <li class="soundbar__action action">
+              <button class="icon-btn action__btn action__btn_share">
+                <span class="action__count">15</span>
+              </button>
             </li>
           </ul>
         </div>
@@ -174,27 +416,39 @@
         <div class="soundbar__cover"></div>
 
         <div class="soundbar__inner">
-          <div class="sooundbar__content">
-            <time class="soundbar__time" datetime="15:43">15:43</time>
-            <h3 class="soundbar__title">Европа. XIX век</h3>
-            <p class="soundbar__descr">Дмитрий Гутенберг</p>
-            <button class="btn btn_play">Слушать</button>
+          <div class="soundbar__content">
+            <div class="soundbar__info">
+              <h3 class="soundbar__title">Творческие планы</h3>
+              <p class="soundbar__descr">Дмитрий Госсен</p>
+              <small class="soundbar__length">3:43</small>
+              <time class="soundbar__date" datetime="2022-07-14">14&nbsp;июня</time>
+            </div>
+
+            <button class="soundbar__btn icon-btn icon-btn_size_l">
+              <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.69238 15.7965L11.5716 8.79964C12.1428 8.39982 12.1428 7.60018 11.5716 7.20036L1.69238 0.203465C0.994271 -0.296313 0 0.183473 0 1.00311V14.9969C0 15.8165 0.994271 16.2963 1.69238 15.7965Z" />
+              </svg>
+            </button>
           </div>
 
-          <ul class="controls soundbar__controls">
-            <li class="controls__item">
-              <button class="btn btn_action btn_summary">Прослушали</button>
-              <span class="controls__count">258</span>
+          <ul class="list soundbar__action-list">
+            <li class="soundbar__action action">
+              <button class="icon-btn action__btn">
+                <span class="action__count">307</span>
+              </button>
             </li>
 
-            <li class="controls__item">
-              <button class="btn btn_action btn_like">Нравится</button>
-              <span class="controls__count">104</span>
+            <li class="soundbar__action action">
+              <button class="icon-btn action__btn action__btn_like">
+                <span class="action__count">24</span>
+              </button>
             </li>
 
-            <li class="controls__item">
-              <button class="btn btn_action btn_share">Поделиться</button>
-              <span class="controls__count">68</span>
+            <li class="soundbar__action action">
+              <button class="icon-btn action__btn action__btn_share">
+                <span class="action__count">15</span>
+              </button>
             </li>
           </ul>
         </div>
@@ -204,27 +458,39 @@
         <div class="soundbar__cover"></div>
 
         <div class="soundbar__inner">
-          <div class="sooundbar__content">
-            <time class="soundbar__time" datetime="15:43">15:43</time>
-            <h3 class="soundbar__title">Европа. XIX век</h3>
-            <p class="soundbar__descr">Дмитрий Гутенберг</p>
-            <button class="btn btn_play">Слушать</button>
+          <div class="soundbar__content">
+            <div class="soundbar__info">
+              <h3 class="soundbar__title">Творческие планы</h3>
+              <p class="soundbar__descr">Дмитрий Госсен</p>
+              <small class="soundbar__length">3:43</small>
+              <time class="soundbar__date" datetime="2022-07-14">14&nbsp;июня</time>
+            </div>
+
+            <button class="soundbar__btn icon-btn icon-btn_size_l icon-btn_play-big">
+              <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.69238 15.7965L11.5716 8.79964C12.1428 8.39982 12.1428 7.60018 11.5716 7.20036L1.69238 0.203465C0.994271 -0.296313 0 0.183473 0 1.00311V14.9969C0 15.8165 0.994271 16.2963 1.69238 15.7965Z" />
+              </svg>
+            </button>
           </div>
 
-          <ul class="controls soundbar__controls">
-            <li class="controls__item">
-              <button class="btn btn_action btn_summary">Прослушали</button>
-              <span class="controls__count">258</span>
+          <ul class="list soundbar__action-list">
+            <li class="soundbar__action action">
+              <button class="icon-btn action__btn">
+                <span class="action__count">307</span>
+              </button>
             </li>
 
-            <li class="controls__item">
-              <button class="btn btn_action btn_like">Нравится</button>
-              <span class="controls__count">104</span>
+            <li class="soundbar__action action">
+              <button class="icon-btn action__btn action__btn_like">
+                <span class="action__count">24</span>
+              </button>
             </li>
 
-            <li class="controls__item">
-              <button class="btn btn_action btn_share">Поделиться</button>
-              <span class="controls__count">68</span>
+            <li class="soundbar__action action">
+              <button class="icon-btn action__btn action__btn_share">
+                <span class="action__count">15</span>
+              </button>
             </li>
           </ul>
         </div>
@@ -234,27 +500,39 @@
         <div class="soundbar__cover"></div>
 
         <div class="soundbar__inner">
-          <div class="sooundbar__content">
-            <time class="soundbar__time" datetime="15:43">15:43</time>
-            <h3 class="soundbar__title">Европа. XIX век</h3>
-            <p class="soundbar__descr">Дмитрий Гутенберг</p>
-            <button class="btn btn_play">Слушать</button>
+          <div class="soundbar__content">
+            <div class="soundbar__info">
+              <h3 class="soundbar__title">Творческие планы</h3>
+              <p class="soundbar__descr">Дмитрий Госсен</p>
+              <small class="soundbar__length">3:43</small>
+              <time class="soundbar__date" datetime="2022-07-14">14&nbsp;июня</time>
+            </div>
+
+            <button class="soundbar__btn icon-btn icon-btn_size_l">
+              <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.69238 15.7965L11.5716 8.79964C12.1428 8.39982 12.1428 7.60018 11.5716 7.20036L1.69238 0.203465C0.994271 -0.296313 0 0.183473 0 1.00311V14.9969C0 15.8165 0.994271 16.2963 1.69238 15.7965Z" />
+              </svg>
+            </button>
           </div>
 
-          <ul class="controls soundbar__controls">
-            <li class="controls__item">
-              <button class="btn btn_action btn_summary">Прослушали</button>
-              <span class="controls__count">258</span>
+          <ul class="list soundbar__action-list">
+            <li class="soundbar__action action">
+              <button class="icon-btn action__btn">
+                <span class="action__count">307</span>
+              </button>
             </li>
 
-            <li class="controls__item">
-              <button class="btn btn_action btn_like">Нравится</button>
-              <span class="controls__count">104</span>
+            <li class="soundbar__action action">
+              <button class="icon-btn action__btn action__btn_like">
+                <span class="action__count">24</span>
+              </button>
             </li>
 
-            <li class="controls__item">
-              <button class="btn btn_action btn_share">Поделиться</button>
-              <span class="controls__count">68</span>
+            <li class="soundbar__action action">
+              <button class="icon-btn action__btn action__btn_share">
+                <span class="action__count">15</span>
+              </button>
             </li>
           </ul>
         </div>
@@ -262,11 +540,35 @@
     </div>
 
     <div class="button-arrow-wrapper wrapper">
-      <button class="btn btn_arrow"></button>
-      <button class="btn btn_arrow btn_arrow_hover"></button>
-      <button class="btn btn_arrow btn_arrow_focus"></button>
-      <button class="btn btn_arrow btn_arrow_active"></button>
-      <button class="btn btn_arrow btn_arrow_open"></button>
+      <button class="icon-btn icon-btn_size_l icon-btn_arrow">
+        <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 2L10 10L18 2" stroke-width="2" stroke-linecap="square" />
+        </svg>
+      </button>
+      
+      <button class="icon-btn icon-btn_size_l icon-btn_arrow">
+        <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 2L10 10L18 2" stroke-width="2" stroke-linecap="square" />
+        </svg>
+      </button>
+      
+      <button class="icon-btn icon-btn_size_l icon-btn_arrow">
+        <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 2L10 10L18 2" stroke-width="2" stroke-linecap="square" />
+        </svg>
+      </button>
+      
+      <button class="icon-btn icon-btn_size_l icon-btn_arrow">
+        <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 2L10 10L18 2" stroke-width="2" stroke-linecap="square" />
+        </svg>
+      </button>
+      
+      <button class="icon-btn icon-btn_size_l icon-btn_arrow icon-btn_arrow_open">
+        <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 2L10 10L18 2" stroke-width="2" stroke-linecap="square" />
+        </svg>
+      </button>
     </div>
 
     <div class="select-wrapper wrapper">
