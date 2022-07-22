@@ -172,7 +172,7 @@
   top: 691px;
   display: flex;
   flex-direction: column;
-  padding: 18px;
+  padding: 17px;
 }
 
 .link_arrow-wrapper *:not(:last-child) {
@@ -242,19 +242,23 @@
 .select-wrapper-opened *:not(:last-child) {
   margin-bottom: 142px;
 }
-
+*/
 .card-wrapper {
   left: 216px;
   top: 1337px;
   display: flex;
   flex-direction: column;
-  padding: 30px 27px 20px;
+  padding: 29px 26px 20px;
+}
+
+.card-wrapper>*:first-child {
+  transform: translateX(10px);
 }
 
 .card-wrapper>*:not(:last-child) {
   margin-bottom: 18px;
 }
-
+/*
 .accordion-wrapper {
   left: 564px;
   top: 1456px;
@@ -267,7 +271,7 @@
 .accordion-wrapper>*:not(:last-child) {
   margin-bottom: 59px;
 }
-
+*/
 .btn-sec-small-wrapper {
   left: 1357px;
   top: 1456px;
@@ -277,8 +281,12 @@
   background: var(--main_color);
 }
 
+.btn-sec-small-wrapper-1 {
+  width: 210px;
+}
+
 .btn-sec-small-wrapper *:not(:last-child) {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .radio-btn-wrapper {
@@ -298,12 +306,13 @@
   top: 2275px;
   display: flex;
   flex-direction: column;
-  padding: 20px 22px;
+  padding: 18px 21px;
 }
 
 .reset-btn-wrapper *:not(:last-child) {
   margin-bottom: 7px;
 }
+
 
 .btn-sec-small-wrapper-2 {
   left: 908px;
@@ -325,7 +334,7 @@
 .playlis-card-wrapper>*:not(:last-child) {
   margin-right: 30px;
 }
-
+/*
 .form-field-wrapper {
   left: 229px;
   top: 2899px;
