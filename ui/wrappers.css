@@ -334,18 +334,18 @@
 .playlis-card-wrapper>*:not(:last-child) {
   margin-right: 30px;
 }
-/*
+
 .form-field-wrapper {
   left: 229px;
   top: 2899px;
   display: flex;
   flex-direction: column;
-  padding: 47px 73px 82px 58px;
+  padding: 45px 73px 82px 58px;
   background: var(--main_color);
 }
 
 .form-field-wrapper>*:not(:last-child) {
-  margin-bottom: 46px;
+  margin-bottom: 40px;
 }
 
 .promo-btn_wrapper {
@@ -360,15 +360,15 @@
 .promo-btn_wrapper *:not(:last-child) {
   margin-bottom: 18px;
 }
-*/
 
 .playbar {
   position: absolute;
   left: 1033px;
-  top: 2581px;
+  top: 2578px;
 }
 
-.palylist-card_mobile {
+.playlist-card-mobile-wrapper {
+  display: block;
   position: absolute;
   left: 1370px;
   top: 2777px;

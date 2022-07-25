@@ -1140,9 +1140,12 @@
 
     <div class="playlis-card-wrapper wrapper">
       <article class="playlist-card">
-        <a href="#" class="playlist-card__cover">
-          <img src="../img/ploho.png" alt="" class="playlist-card__img">
+        <a href="#" class="playlist-card__link">
+          <div class="playlist-card__cover">
+            <img src="../img/ploho.png" alt="" class="playlist-card__img">
+          </div>
         </a>
+        
         <div class="playlist-card__bottom">
           <h3 class="playlist-card__title">Ploho</h3>
           <p class="playlist-card__descr">3&nbsp;последних альбома</p>
@@ -1153,9 +1156,12 @@
       </article>
 
       <article class="playlist-card playlist-card_hover">
-        <a href="#" class="playlist-card__cover">
-          <img src="../img/ploho.png" alt="" class="playlist-card__img">
+        <a href="#" class="playlist-card__link">
+          <div class="playlist-card__cover">
+            <img src="../img/ploho.png" alt="" class="playlist-card__img">
+          </div>
         </a>
+        
         <div class="playlist-card__bottom">
           <h3 class="playlist-card__title">Ploho</h3>
           <p class="playlist-card__descr">3&nbsp;последних альбома</p>
@@ -1166,9 +1172,12 @@
       </article>
 
       <article class="playlist-card playlist-card_focus">
-        <a href="#" class="playlist-card__cover">
-          <img src="../img/ploho.png" alt="" class="playlist-card__img">
+        <a href="#" class="playlist-card__link">
+          <div class="playlist-card__cover">
+            <img src="../img/ploho.png" alt="" class="playlist-card__img">
+          </div>
         </a>
+
         <div class="playlist-card__bottom">
           <h3 class="playlist-card__title">Ploho</h3>
           <p class="playlist-card__descr">3&nbsp;последних альбома</p>
@@ -1179,9 +1188,12 @@
       </article>
 
       <article class="playlist-card playlist-card_active">
-        <a href="#" class="playlist-card__cover">
-          <img src="../img/ploho.png" alt="" class="playlist-card__img">
+        <a href="#" class="playlist-card__link">
+          <div class="playlist-card__cover">
+            <img src="../img/ploho.png" alt="" class="playlist-card__img">
+          </div>
         </a>
+        
         <div class="playlist-card__bottom">
           <h3 class="playlist-card__title">Ploho</h3>
           <p class="playlist-card__descr">3&nbsp;последних альбома</p>
@@ -1193,20 +1205,37 @@
     </div>
 
     <div class="playbar">
-      <div class="palybar__top">
-        <button class="btn_reset"></button>
+      <div class="playbar__top">
+        <button class="playbar__open-btn icon-btn icon-btn_size_s">
+          <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.32843 0.964658L8.03553 1.67176L1.67157 8.03573L0.964466 7.32862L7.32843 0.964658Z" fill="white" />
+            <path d="M8.03553 7.32862L7.32843 8.03573L0.964466 1.67176L1.67157 0.964657L8.03553 7.32862Z" fill="white" />
+          </svg>
+        </button>
         <span class="playbar__title">Что в эфире?</span>
       </div>
 
-      <ul class="playbar__list">
+      <ul class="list playbar__list">
         <li class="playbar__item">
-          <button class="btn play play_small">Play</button>
+          <button class="icon-btn icon-btn_size_m playbar__play-btn " aria-label="Воспроизвести">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" />
+            </svg>
+          </button>
+
           <p class="playbar__descr">Ранее в эфире</p>
           <p class="playbar__name">«Музыка»</p>
         </li>
 
         <li class="playbar__item">
-          <button class="btn play play_small">Play</button>
+          <button class="icon-btn icon-btn_size_m playbar__play-btn " aria-label="Воспроизвести">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" />
+            </svg>
+          </button>
+
           <p class="playbar__descr">Сейчас в эфире</p>
           <p class="playbar__name">«Как так?»</p>
         </li>
@@ -1225,16 +1254,22 @@
       </div>
     </div>
 
-    <article class="playlist-card playlist-card_mobile">
-      <div class="playlist-card__cover">
-        <img src="../img/ploho.png" alt="" class="playlist-card__img">
-      </div>
-      <div class="playlist-card__bottom">
-        <h3 class="playlist-card__title">Ploho</h3>
-        <p class="playlist-card__descr"></p>
-        <div class="playlist__country country country_rus"></div>
-      </div>
-    </article>
+    <div class="playlist-card-mobile-wrapper wrapper">
+      <article class="playlist-card playlist-card_mobile">
+        <a href="#" class="playlist-card__link">
+          <div class="playlist-card__cover">
+            <img src="../img/ploho.png" alt="" class="playlist-card__img">
+          </div>
+        </a>
+        
+        <div class="playlist-card__bottom">
+          <h3 class="playlist-card__title">Ploho</h3>
+          <p class="playlist-card__descr">3&nbsp;последних альбома</p>
+          <div class="playlist-card__country">
+            <div class="country country_rus"></div>
+          </div>
+        </div>
+    </div>
 
     <div class="form-field-wrapper wrapper">
       <label class="form__field">
@@ -1253,21 +1288,21 @@
       </label>
 
       <label class="form__field form__field_active">
-        <input type="text" placeholder="Имя" class="form__field" value="Виктор">
+        <input type="text" placeholder="Имя" class="form__input" value="Виктор">
         <span class="form__alarm"></span>
       </label>
 
-      <label class="form__field form__field_alarm">
-        <input type="text" placeholder="Имя" class="form__field" value="34%%312]\\">
+      <label class="form__field">
+        <input type="text" placeholder="Имя" class="form__input form__input_alarm" value="34%%312]\\">
         <span class="form__alarm">Ошибка</span>
       </label>
     </div>
 
     <div class="promo-btn_wrapper wrapper">
-      <button class="btn btn_promo btn_ya">Купить на Яндекс.Маркет</button>
-      <button class="btn btn_promo btn_promo_hover btn_ya">Купить на Яндекс.Маркет</button>
-      <button class="btn btn_promo btn_promo_focus btn_ya">Купить на Яндекс.Маркет</button>
-      <button class="btn btn_promo btn_promo_active btn_ya">Купить на Яндекс.Маркет</button>
+      <button class="btn btn_promo">Купить на Яндекс.Маркет</button>
+      <button class="btn btn_promo btn_promo_hover">Купить на Яндекс.Маркет</button>
+      <button class="btn btn_promo btn_promo_focus">Купить на Яндекс.Маркет</button>
+      <button class="btn btn_promo btn_promo_active">Купить на Яндекс.Маркет</button>
     </div>
   </div>
 
