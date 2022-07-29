@@ -357,8 +357,8 @@
   background: var(--main_color);
 }
 
-.promo-btn_wrapper *:not(:last-child) {
-  margin-bottom: 18px;
+.promo-btn_wrapper>*:not(:last-child) {
+  margin-bottom: 21px;
 }
 
 .playbar {

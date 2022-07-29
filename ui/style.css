@@ -14,8 +14,8 @@
   --interactive_accent_color: #4F28A5;
   /* filter: brightness(0.7) */
   --alarm_color: #D52B1E;
-  --promo_base_color: #BB973E;
-  --promo_second_color: #F0D288;
+  --promo_base_color: #F0D288;
+  --promo_second_color: #BB973E;
   /* sizes */
   --container_size: 1610px;
   /* base-style */
@@ -305,6 +305,71 @@ img {
 .btn_special_active svg,
 .btn_special:active svg {
   stroke: var(--secondary_color);
+}
+
+.btn_promo {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-color: var(--promo_base_color);
+  color: var(--promo_base_color);
+  background-color: transparent;
+}
+
+.btn_promo:hover {
+  border-color: var(--promo_base_color);
+  color: var(--main_color);
+  background-color: var(--promo_base_color);
+}
+
+.btn_promo:focus {
+  border-color: var(--promo_base_color);
+  color: var(--main_color);
+  background-color: var(--promo_second_color);
+}
+
+.btn_promo:active {
+  border-color: var(--promo_second_color);
+  color: var(--main_color);
+  background-color: var(--promo_second_color);
+}
+
+.btn_promo .ya-img {
+  margin-right: 6px;
+  transform: translateY(-2px);
+}
+
+.btn_promo .ya-img__circle {
+  fill: var(--promo_base_color);
+  transition: fill 200ms linear;
+}
+
+.btn_promo .ya-img__line {
+  fill: var(--main_color);
+  transition: fill 200ms linear;
+}
+
+.btn_promo:hover .ya-img__circle {
+  fill: var(--main_color);
+}
+
+.btn_promo:hover .ya-img__line {
+  fill: var(--promo_base_color);
+}
+
+.btn_promo:focus .ya-img__circle {
+  fill: var(--promo_base_color);
+}
+
+.btn_promo:focus .ya-img__line {
+  fill: var(--main_color);
+}
+
+.btn_promo:active .ya-img__circle {
+  fill: var(--main_color);
+}
+
+.btn_promo:active .ya-img__line {
+  fill: var(--promo_second_color);
 }
 
 .icon-btn {
