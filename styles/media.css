@@ -1,0 +1,28 @@
+@media (max-width: 1024px) {
+  :root {
+    --container-padding: 100px;
+  }
+
+  .header__not-desk {
+    padding: 23px 0;
+    display: block;
+    background-color: var(--optional_color);
+  }
+  
+  .header__subtop {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__logo_desk {
+    display: none;
+  }
+
+  .header__age-restriction {
+    display: none;
+  }
+
+  .main {
+    display: none;
+  }
+}

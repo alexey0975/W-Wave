@@ -1237,10 +1237,19 @@ img {
   padding-bottom: 18px;
 }
 
+.header__not-desk {
+  display: none;
+}
+
+.header__login_mob {
+  display: none;
+}
+
 .header__logo {
   flex: 0 0 160px;
   margin-right: 70px;
 }
+
 
 .header__nav {
   margin-right: auto;
