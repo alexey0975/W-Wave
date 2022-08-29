@@ -3,9 +3,16 @@
     --container-padding: 100px;
   }
 
-  .header__not-desk {
-    padding: 23px 0;
+  .desktop-only {
+    display: none;
+  }
+
+  .no-desktop {
     display: block;
+  }
+
+  .header__not-desk {
+    padding: 23px 0 19px;
     background-color: var(--optional_color);
   }
   
@@ -14,15 +21,111 @@
     justify-content: space-between;
   }
 
-  .header__logo_desk {
-    display: none;
+  .header__logo {
+    flex: 0 0 112px;
   }
 
-  .header__age-restriction {
-    display: none;
+  .header__link-list {
+    margin-right: 32px;
   }
 
-  .main {
+  .header__playbar {
+    margin-right: 0;
+  }
+
+  .nav {
+    margin-left: -5px;
+  }
+
+  .playbar {
+    padding-top: 3px;
+    padding-bottom: 13px;
+  }
+
+  .playbar__item {
+    padding-top: 9px;
+    padding-left: 15px;
+    padding-right: 17px;
+    padding-bottom: 0;
+  }
+
+  .hero__inner {
+    padding-top: 63px;
+    padding-bottom: 50px;
+  }
+
+  .hero__descr {
+    margin-bottom: 20px;
+  }
+
+  .hero__img {
+    flex: 0 1 295px;
+    background-image: url('../img/microphone1024.png');
+  }
+
+  .broadcasts__left {
+    flex-basis: var(--cell-basis-4);
+  }
+
+  .broadcasts__right {
+    flex-basis: var(--cell-basis-8);
+  }
+
+  .broadcasts__list {
+    padding-top: 12px;
+  }
+
+  .broadcasts__item {
+    flex-basis: var(--cell-basis-6);
+  }
+
+  .broadcasts__item:nth-child(n+4) {
+    margin-top: 0;
+  }
+
+  .broadcasts__item:nth-child(n+3) {
+    margin-top: var(--gutter);
+  }
+
+  .guests__descr {
+    flex-basis: var(--cell-basis-8);
+    margin-bottom: 49px;
+  }
+
+  .guests__item {
+    flex-basis: var(--cell-basis-4);
+  }
+
+  .guests__name {
+    margin-bottom: 6px;
+  }
+
+  .guests__bio {
+    margin-bottom: 31px;
+  }
+
+  .playlists__left {
+    flex-basis: var(--cell-basis-9);
+  }
+
+  .playlists__right {
+    flex-basis: var(--cell-basis-12);
+  }
+
+  .filter__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter__item {
+    flex: 1 1 auto
+  }
+
+  .filter__item:nth-child(odd) {
+    flex: 0 1 268px;
+  }
+
+  .main>*:not(.hero, .podcasts, .broadcasts, .guests, .playlists) {
     display: none;
   }
 }
