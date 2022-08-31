@@ -1055,10 +1055,6 @@ img {
   visibility: visible;
 }
 
-.accordion__trigger {
-  transition: transform 400ms linear;
-}
-
 .accordion__trigger::before {
   position: absolute;
   left: 0;
@@ -1068,7 +1064,11 @@ img {
   content: '';
 }
 
-.is-active .accordion__trigger {
+.accordion__trigger svg {
+  transition: transform 400ms linear;
+}
+
+.is-active .accordion__trigger svg {
   transform: rotate(180deg);
 }
 
