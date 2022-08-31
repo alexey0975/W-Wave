@@ -1,13 +1,39 @@
-
-// кастомный селект
 document.addEventListener('DOMContentLoaded', () => {
-  const element = document.querySelector('.select');
-  const choices = new Choices(element, {
+  // Custom select
+  new Choices('.js-select', {
     searchEnabled: false,
-    itemSelectText: '',
     shouldSort: false,
-    placeholder: true,
-    placeholderValue: '',
     position: 'bottom',
+    classNames: {
+      containerOuter: 'select',
+      containerInner: 'select__inner',
+      list: 'select__list',
+      listSingle: 'select__list--single',
+      listDropdown: 'select__list--dropdown',
+      item: 'select__item',
+      itemSelectable: 'select__item--selectable',
+      itemChoice: 'select__item--option'
+    },
+  });
+
+  // Accordion
+  new Accordion('.accordion-wrapper', {
+    elementClass: 'accordion',
+    triggerClass: 'accordion__trigger',
+    panelClass: 'accordion__panel',
+  });
+
+  // Carousel
+  new Swiper('.carousel', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    wrapperClass: 'carousel__list',
+    slideClass: 'carousel__item',
+
+    navigation: {
+      nextEl: '.carousel__btn--right',
+      prevEl: '.carousel__btn--left',
+    },
   });
 })
