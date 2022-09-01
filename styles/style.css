@@ -1486,7 +1486,7 @@ img {
 }
 
 .guests__list {
-  padding: 28px 0 30px;
+  padding: 26px 0 30px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1510,7 +1510,7 @@ img {
 
 
 .guests__img {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .guests__social {
@@ -1574,15 +1574,20 @@ img {
   background-color: var(--base_color_light);
 }
 
+.promo__cover {
+  flex-basis: var(--cell-basis-7);
+}
+
 .promo__img {
   width: 100%;
   height: 100%;
-  background: url('../img/radio.png') no-repeat center / contain;
+  background: url('../img/promo/radio.png') no-repeat center / contain;
 }
 
 .promo__content {
   display: flex;
   flex-direction: column;
+  flex-basis: var(--cell-basis-5);
 }
 
 .promo__title {
@@ -1698,6 +1703,14 @@ img {
 
 .about-us__entity:not(:last-child) {
   margin-bottom: 29px;
+}
+
+.about-us__info {
+  flex-basis: var(--cell-basis-7);
+}
+
+.about-us__cover {
+  flex-basis: var(--cell-basis-5);
 }
 
 .about-us__img {

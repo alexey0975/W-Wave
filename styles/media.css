@@ -112,20 +112,137 @@
     flex-basis: var(--cell-basis-12);
   }
 
+  .playlists__inner {
+    margin-bottom: 42px;
+  }
+  
+  .playlists__list {
+    padding-top: 11px;
+  }
+
+  .playlists__item {
+    flex-basis: var(--cell-basis-4);
+  }
+  
+  .playlists__item:nth-child(n+5) {
+    margin-top: 0;
+  }
+  
+  .playlists__item:nth-child(n+4) {
+    margin-top: var(--gutter);
+  }
+
+  .warning {
+    padding-bottom: 6px;
+  }
+
+  .warning__copy {
+    margin-bottom: 12px;
+  }
+
   .filter__list {
     display: flex;
     flex-wrap: wrap;
+    max-width: 500px;
   }
 
-  .filter__item {
-    flex: 1 1 auto
+  .filter__item:not(:last-child) {
+    margin-bottom: 26px;
   }
 
-  .filter__item:nth-child(odd) {
-    flex: 0 1 268px;
+  .filter__item:nth-child(-n+4) {
+    flex: 0 0 160px;
+    margin-right: 7px;
   }
 
-  .main>*:not(.hero, .podcasts, .broadcasts, .guests, .playlists) {
+  .filter__item:nth-child(4n+2) {
+    order: 1;
+  }
+
+  .filter__item:nth-child(4n+3) {
+    order: 2;
+  }
+
+  .filter__item:nth-child(4n+4) {
+    order: 3;
+  }
+
+  .filter__item:nth-child(4n) {
+    margin-bottom: 0;
+  }
+  
+  .playlist-card {
+      flex-direction: row;
+  }
+
+  .playlist-card__cover {
+    min-height: 112px;
+  }
+
+  .playlist-card__img {
+    height: auto;
+    min-height: 112px;
+    width: 112px;
+  }
+
+  .playlist-card__country {
+    left: 0;
+    right: auto;
+  }
+
+  .playlist-card__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+  }
+
+  .promo {
+    padding-bottom: 94px;
+  }
+
+  .promo__cover,
+  .promo__content {
+    flex-basis: var(--cell-basis-6);
+  }
+
+  .promo__img {
+    background-position: center top 123px;
+  }
+
+  .about-us__info {
+    flex-basis: var(--cell-basis-8);
+  }
+  
+  .about-us__cover {
+    flex-basis: var(--cell-basis-4);
+  }
+
+  .about-us__img {
+    background: url('../img/svg/dawn.svg') no-repeat right center;
+  }
+
+  .about-us__entity.about-us__carousel {
+    margin-bottom: 38px;
+  }
+
+  .about-us__form {
+    flex-basis: var(--cell-basis-12);
+  }
+
+  .carousel__btn {
+    top: 31.5%;
+  }
+
+  .carousel__btn--left {
+    left: -50px;
+  }
+
+  .carousel__btn--right {
+    right: -50px;
+  }
+  
+  /* .main>*:not(.hero, .podcasts, .broadcasts, .guests, .playlists, .promo) {
     display: none;
-  }
+  } */
 }

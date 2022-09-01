@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Carousel
   new Swiper('.carousel', {
-    slidesPerView: 4,
+    slidesPerView: 2,
     spaceBetween: 30,
     loop: true,
     wrapperClass: 'carousel__list',
@@ -34,6 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
     navigation: {
       nextEl: '.carousel__btn--right',
       prevEl: '.carousel__btn--left',
+    },
+
+    breakpoints: {
+      1025: {
+        slidesPerView: 4,
+      },
     },
   });
 })
