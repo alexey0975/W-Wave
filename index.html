@@ -19,20 +19,26 @@
 
 <body>
   <header class="header">
-    <div class="header__not-desk no-desktop">
+    <div class="header__not-desk is-no-desktop">
       <div class="container header__subtop">
         <a href="#" class="logo header__logo">
           <img src="./img/svg/logo.svg" alt="Логотип W-Wawe" class="logo__img">
         </a>
 
-        <button class="header__login mob-large btn btn--small btn--monochrome">Вход</button>
+        <button class="header__login is-mobile btn btn--small btn--monochrome">Вход</button>
       </div>
     </div>
     <div class="container">
       <div class="header__top">
-        <a href="#" class="logo header__logo desktop-only">
+        <a href="#" class="logo header__logo is-desktop-only">
           <img src="./img/svg/logo.svg" alt="Логотип W-Wawe" class="logo__img">
         </a>
+
+        <button class="burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
 
         <nav class="nav header__nav">
           <ul class="list nav__list">
@@ -109,7 +115,14 @@
           </ul>
 
           <div class="header__playbar playbar">
-            <div class="playbar__top">
+            <button class="icon icon--middle is-768-only" aria-label="Воспроизвести">
+              <svg width="20" height="20" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" />
+              </svg>
+            </button>
+
+            <div class="playbar__top mobile-only">
               <button class="playbar__open-btn icon icon--small">
                 <svg width="9" height="9" viewbox="0 0 9 9" xmlns="http://www.w3.org/2000/svg">
                   <path d="M7.32843 0.964658L8.03553 1.67176L1.67157 8.03573L0.964466 7.32862L7.32843 0.964658Z"
@@ -153,7 +166,7 @@
             </ul>
           </div>
 
-          <div class="header__age-restriction age-restriction desktop-only">
+          <div class="header__age-restriction age-restriction is-desktop-only">
             <small class="age-restriction__inner">12+</small>
           </div>
         </div>
@@ -188,7 +201,7 @@
         <h2 class="podcasts__title title">Подкасты</h2>
 
         <ul class="list podcasts__list grid">
-          <li class="podcasts__item grid__cell grid__cell--6">
+          <li class="podcasts__item grid__cell">
             <article class="soundbar">
               <div class="soundbar__cover"></div>
 
@@ -253,7 +266,7 @@
             </article>
           </li>
 
-          <li class="podcasts__item grid__cell grid__cell--6">
+          <li class="podcasts__item grid__cell">
             <article class="soundbar">
               <div class="soundbar__cover"></div>
 
@@ -318,7 +331,7 @@
             </article>
           </li>
 
-          <li class="podcasts__item grid__cell grid__cell--6">
+          <li class="podcasts__item grid__cell">
             <article class="soundbar">
               <div class="soundbar__cover"></div>
 
@@ -383,7 +396,7 @@
             </article>
           </li>
 
-          <li class="podcasts__item grid__cell grid__cell--6">
+          <li class="podcasts__item grid__cell">
             <article class="soundbar">
               <div class="soundbar__cover"></div>
 
@@ -448,7 +461,7 @@
             </article>
           </li>
 
-          <li class="podcasts__item grid__cell grid__cell--6">
+          <li class="podcasts__item grid__cell">
             <article class="soundbar">
               <div class="soundbar__cover"></div>
 
@@ -513,7 +526,7 @@
             </article>
           </li>
 
-          <li class="podcasts__item grid__cell grid__cell--6">
+          <li class="podcasts__item grid__cell">
             <article class="soundbar">
               <div class="soundbar__cover"></div>
 
@@ -578,7 +591,7 @@
             </article>
           </li>
 
-          <li class="podcasts__item grid__cell grid__cell--6">
+          <li class="podcasts__item grid__cell">
             <article class="soundbar">
               <div class="soundbar__cover"></div>
 
@@ -643,7 +656,7 @@
             </article>
           </li>
 
-          <li class="podcasts__item grid__cell grid__cell--6">
+          <li class="podcasts__item grid__cell">
             <article class="soundbar">
               <div class="soundbar__cover"></div>
 
@@ -733,7 +746,7 @@
               </label>
             </aside>
 
-            <div class="archive archive--desktop">
+            <div class="archive is-more-768">
               <div class="archive__cover"></div>
 
               <a href="#" class="archive__btn btn btn--small btn--monochrome">
@@ -899,25 +912,31 @@
             </ul>
           </div>
         </div>
+      </div>
 
-        <div class="archive archive--mobile">
-          <div class="archive__cover"></div>
+      <div class="archive archive--768">
+        <div class="archive__cover"></div>
 
-          <a href="#" class="btn btn--special archive__btn">
-            <svg width="19" height="18" viewbox="0 0 19 18" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.5 1.5L2 5.25L9.5 9L17 5.25L9.5 1.5Z" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path d="M2 12.75L9.5 16.5L17 12.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M2 9L9.5 12.75L17 9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-
-            <span>Архив</span>
+        <div class="archive__inner">
+          <a href="#" class="archive__btn btn btn--small btn--monochrome">
+            <span class="btn__inner">
+              <svg class="btn__icon btn__icon--archive" width="19" height="18" fill="none" viewbox="0 0 19 18"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.5 1.5L2 5.25L9.5 9L17 5.25L9.5 1.5Z" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M2 12.75L9.5 16.5L17 12.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M2 9L9.5 12.75L17 9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+  
+              <span>Архив</span>
+            </span>
           </a>
-
-          <p class="archive__descr">
+  
+          <p class="archive__descr text text--thin">
             В архив попадают все передачи, которые вы пропустили! Enjoy:)
           </p>
         </div>
+
       </div>
     </section>
 
@@ -1406,7 +1425,10 @@
           </ul>
 
           <article class="guests__card grid__cell">
-            <img class="guests__img" src="./img/people/Desktop/popup/olga-martinova.png" alt="Ольга Мартынова">
+            <picture>
+              <source srcset="./img/people/768/popup/Olga_Martinova.png">
+              <img class="guests__img" src="./img/people/Desktop/popup/Olga_Martinova.png" alt="Ольга Мартынова">
+            </picture>
 
             <ul class="list guests__social social">
               <li class="social__item">
@@ -1523,7 +1545,7 @@
               </fieldset>
             </aside>
 
-            <aside class="playlists__warning warning desktop-only">
+            <aside class="playlists__warning warning is-desktop-only">
               <p class="text warning__text">
                 Раздел «Плейлисты» может содержать информацию, не предназначенную для несовершеннолетних
               </p>
@@ -1793,7 +1815,7 @@
           </div>
         </div>
 
-        <aside class="playlists__warning warning no-desktop">
+        <aside class="playlists__warning warning is-no-desktop">
           <p class="text warning__text">
             Раздел «Плейлисты» может содержать информацию, не предназначенную для несовершеннолетних
           </p>
@@ -1815,7 +1837,7 @@
           </div>
 
           <div class="promo__content grid__cell">
-            <h2 class="title promo__title">Будь с нами на одной волне!</h2>
+            <h2 class="title promo__title">Будь с нами на&nbsp;одной&nbsp;волне!</h2>
 
             <p class="promo__descr text">
               Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на то, что мы только начали свой
@@ -1856,7 +1878,7 @@
     <section id="about-us" class="section section--negative about-us">
       <div class="container">
         <div class="grid">
-          <div class="about-us__entity about-us__info about-us__info grid__cell">
+          <div class="about-us__entity about-us__info grid__cell">
             <h2 class="title about-us__title">О нас</h2>
 
             <p class="about-us__descr section__text text text--bold">
@@ -1881,22 +1903,24 @@
                 <path d="M2 2L10 10L18 2" stroke-width="2" stroke-linecap="square" />
               </svg>
             </button>
-  
+
             <button class="carousel__btn carousel__btn--right icon icon--big icon--stroke icon--dark-bg">
               <svg class="bird" width="20" height="12" viewbox="0 0 20 12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 2L10 10L18 2" stroke-width="2" stroke-linecap="square" />
               </svg>
             </button>
 
-            <div class="carousel">        
+            <div class="carousel">
               <ul class="list carousel__list">
                 <li class="carousel__item">
                   <figure class="guest-card">
                     <picture>
+                      <source srcset="./img/people/768/carousel/Dmitry_Gutenberg.png" media="(max-width: 768px)">
                       <source srcset="./img/people/1024/carousel/Dmitry_Gutenberg.png" media="(max-width: 1024px)">
-                      <img class="guest-card__img" src="./img/people/Desktop/carousel/Dmitry_Gutenberg.png" alt="Дмитрий Гутенберг">
+                      <img class="guest-card__img" src="./img/people/Desktop/carousel/Dmitry_Gutenberg.png"
+                        alt="Дмитрий Гутенберг">
                     </picture>
-  
+
                     <figcaption class="guest-card__info">
                       <h3 class="guest-card__title subtitle subtitle--bold">
                         <a href="#" class="link guest-card__link">
@@ -1907,14 +1931,16 @@
                     </figcaption>
                   </figure>
                 </li>
-  
+
                 <li class="carousel__item">
                   <figure class="guest-card">
                     <picture>
+                      <source srcset="./img/people/768/carousel/Anna_Vasilyeva.png" media="(max-width: 768px)">
                       <source srcset="./img/people/1024/carousel/Anna_Vasilyeva.png" media="(max-width: 1024px)">
-                      <img class="guest-card__img" src="./img/people/Desktop/carousel/Anna_Vasilyeva.png" alt="Анна Васильева">
+                      <img class="guest-card__img" src="./img/people/Desktop/carousel/Anna_Vasilyeva.png"
+                        alt="Анна Васильева">
                     </picture>
-  
+
                     <figcaption class="guest-card__info">
                       <h3 class="guest-card__title subtitle subtitle--bold">
                         <a href="#" class="link guest-card__link">
@@ -1925,14 +1951,16 @@
                     </figcaption>
                   </figure>
                 </li>
-  
+
                 <li class="carousel__item">
                   <figure class="guest-card">
                     <picture>
+                      <source srcset="./img/people/768/carousel/Petr_Dmitrievsky.png" media="(max-width: 768px)">
                       <source srcset="./img/people/1024/carousel/Petr_Dmitrievsky.png" media="(max-width: 1024px)">
-                      <img class="guest-card__img" src="./img/people/Desktop/carousel/Petr_Dmitrievsky.png" alt="Пётр Дмитриевский">
+                      <img class="guest-card__img" src="./img/people/Desktop/carousel/Petr_Dmitrievsky.png"
+                        alt="Пётр Дмитриевский">
                     </picture>
-  
+
                     <figcaption class="guest-card__info">
                       <h3 class="guest-card__title subtitle subtitle--bold">
                         <a href="#" class="link guest-card__link">
@@ -1943,14 +1971,16 @@
                     </figcaption>
                   </figure>
                 </li>
-  
+
                 <li class="carousel__item">
                   <figure class="guest-card">
                     <picture>
+                      <source srcset="./img/people/768/carousel/Tatyana_Fleganova.png" media="(max-width: 768px)">
                       <source srcset="./img/people/1024/carousel/Tatyana_Fleganova.png" media="(max-width: 1024px)">
-                      <img class="guest-card__img" src="./img/people/Desktop/carousel/Tatyana_Fleganova.png" alt="Татьяна Флеганова">
+                      <img class="guest-card__img" src="./img/people/Desktop/carousel/Tatyana_Fleganova.png"
+                        alt="Татьяна Флеганова">
                     </picture>
-  
+
                     <figcaption class="guest-card__info">
                       <h3 class="guest-card__title subtitle subtitle--bold">
                         <a href="#" class="link guest-card__link">
@@ -1965,10 +1995,12 @@
                 <li class="carousel__item">
                   <figure class="guest-card">
                     <picture>
+                      <source srcset="./img/people/768/carousel/Fyodor_Prokopyev.png" media="(max-width: 768px)">
                       <source srcset="./img/people/1024/carousel/Fyodor_Prokopyev.png" media="(max-width: 1024px)">
-                      <img class="guest-card__img" src="./img/people/Desktop/carousel/Fyodor_Prokopyev.png" alt="Фёдор Прокопьев">
+                      <img class="guest-card__img" src="./img/people/Desktop/carousel/Fyodor_Prokopyev.png"
+                        alt="Фёдор Прокопьев">
                     </picture>
-  
+
                     <figcaption class="guest-card__info">
                       <h3 class="guest-card__title subtitle subtitle--bold">
                         <a href="#" class="link guest-card__link">
@@ -1983,10 +2015,12 @@
                 <li class="carousel__item">
                   <figure class="guest-card">
                     <picture>
+                      <source srcset="./img/people/768/carousel/Svetlana_Kortneva.png" media="(max-width: 768px)">
                       <source srcset="./img/people/1024/carousel/Svetlana_Kortneva.png" media="(max-width: 1024px)">
-                      <img class="guest-card__img" src="./img/people/Desktop/carousel/Svetlana_Kortneva.png" alt="Светлана Кортнева">
+                      <img class="guest-card__img" src="./img/people/Desktop/carousel/Svetlana_Kortneva.png"
+                        alt="Светлана Кортнева">
                     </picture>
-  
+
                     <figcaption class="guest-card__info">
                       <h3 class="guest-card__title subtitle subtitle--bold">
                         <a href="#" class="link guest-card__link">
@@ -1998,11 +2032,11 @@
                   </figure>
                 </li>
               </ul>
-          </div>
+            </div>
           </div>
 
           <form class="about-us__entity about-us__form form grid__cell">
-            <div class="form__inner grid grid--10">
+            <div class="form__inner grid">
               <label class="form__entity form__area-label grid__cell">
                 <span class="visually-hidden">Сообщение</span>
 
