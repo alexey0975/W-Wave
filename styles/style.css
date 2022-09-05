@@ -593,18 +593,18 @@ img {
   display: none;
   justify-content: center;
   align-items: center;
-  padding: 15px;
-  background: var(--thrid_40_color);
-  border: 1px solid var(--optional_color);
 }
 
 .playbar__open-btn {
   margin-right: 5px;
+  padding: 3px;
+  background-color: var(--responsive_color);
+  border-radius: 50%;
+  transform: rotate(45deg);
 }
 
 .playbar__title {
   color: var(--responsive_color);
-  transform: translateY(2px);
 }
 
 .playbar__list {
@@ -1725,6 +1725,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-right: 15px;
 }
 
 .footer__logo {
@@ -1747,15 +1748,14 @@ img {
 .footer__list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -5px;
 }
 
 .footer__item:nth-child(3n+1) {
-  flex: 0 0 170px;
+  flex: 0 0 146px;
 }
 
 .footer__item:nth-child(3n+2) {
-  flex: 0 0 180px;
+  flex: 0 0 155px;
 }
 
 .footer__item:nth-child(3n) {
@@ -1795,6 +1795,10 @@ img {
 }
 
 .is-768 {
+  display: none;
+}
+
+.is-768-only {
   display: none;
 }
 
