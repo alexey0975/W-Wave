@@ -15,6 +15,10 @@
     padding: 23px 0 19px;
     background-color: var(--optional_color);
   }
+
+  .container {
+    overflow: hidden;
+  }
   
   .header__subtop {
     display: flex;
@@ -548,8 +552,9 @@
     padding: 54px 0;
   }
 
-  .text {
-    font-size: 12px;
+  .section__text {
+    font-size: var(--base_font-size);
+    line-height: 1.55;
   }
 
   .btn {
@@ -650,6 +655,10 @@
     padding: 16px;
   }
 
+  .soundbar__descr {
+    font-size: 12px;
+  }
+
   .soundbar__date {
     top: 0;
     bottom: auto;
@@ -689,17 +698,360 @@
     padding: 8px 10px;
   }
 
+  .card {
+    padding: 59px 5px 10px 10px;
+  }
+
   .card__cover {
-    min-height: auto;
     height: 50px;
+  }
+
+  .card__title {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .card__descr {
+    margin-bottom: 12px;
+    font-size: 9px;
+  }
+
+  .card__link {
+    padding-left: 2px;
+    margin-left: -3px;
+    font-size: 12px;
+  }
+
+  .archive {
+    padding: 30px var(--container-padding);
+  }
+
+  .archive__cover {
+    flex-basis: 77px;
+    min-height: 102px;
+    margin-right: 13px;
+  }
+
+  .archive__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .archive__descr {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  .archive__btn {
+    width: auto;
+    padding-left: 17px;
+    padding-right: 17px;
+    align-self: start;
+    order: 1;
+  }
+
+  .broadcasts {
+    padding-bottom: 0;
+  }
+
+  .broadcasts__list {
+    padding-bottom: 30px;
+  }
+
+  .guests__descr-title {
+    margin-bottom: 0px;
+  }
+
+  .guests__descr {
+    margin-bottom: 30px;
+  }
+
+  .guest__category-list {
+    margin-bottom: 30px;
+  }
+
+  .guests__list {
+    padding: 18px 0 21px;
+  }
+
+  .guests__item {
+    padding-right: 30px;
+    flex-basis: var(--cell-basis-6);
+  }
+
+  .guests__item:not(:nth-last-child(-n+4)) {
+    margin-bottom: 0;
+  }
+
+  .guests__item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 28px;
+  }
+
+  .guests__category-item:last-child {
+    display: none;
+  }
+
+  .guests__img {
     margin-bottom: 10px;
+  }
+
+  .guests__name {
+    margin-bottom: 9px;
+    font-size: 20px;
+  }
+
+  .guests__bio {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .guests__more-btn {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  .social__item .icon--middle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .accordion__header {
+    padding: 12px 0;
+  }
+
+  .accordion__trigger {
+    padding: 6px;
+    width: 27px;
+    height: 27px;
+  }
+
+  .playlists {
+    padding-bottom: 50px;
+  }
+
+  .playlists__left {
+    max-width: 100%;
+    margin-bottom: 18px;
+  }
+
+  .playlists__title {
+    margin-bottom: 21px;
+  }
+
+  .playlists__inner {
+    margin-bottom: 32px;
+  }
+
+  .warning {
+    padding-top: 28px;
+    padding-bottom: 0;
+  }
+
+  .warning__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .warning__copy {
+    line-height: 22px;
+    margin-bottom: 6px;
+  }
+
+  .filter__list {
+    position: relative;
+    max-width: calc(100vw - var(--container-padding));
+    padding: 0;
+    padding-right: var(--container-padding);
+    flex-wrap: nowrap;
+    overflow: visible;
+    overflow-x: auto;
+  }
+
+  .filter__item:nth-child(n) {
+    flex: 0 0 auto;
+    min-width: 113px;
+    margin: 0;
+    margin-right: 15px;
+    order: 0;
+  }
+
+  .filter__item:last-child {
+    margin-right: 0;
+  }
+
+  .radio-btn__descr {
+    justify-content: center;
+    align-items: center;
+    padding: 8px 15px;
+    border: 2px solid var(--responsive_color);
+    color: var(--responsive_color);
+    font-size: 16px;
+    line-height: 1;
+    border-radius: 77px;
+    transition: background-color 200ms linear, color 200ms linear;
+  }
+
+  .radio-btn__entity:checked + .radio-btn__descr {
+    color: var(--backdrop_color);
+    background-color: var(--responsive_color);
+  }
+
+  .radio-btn__descr::before {
+    display: none;
+  }
+
+  .playlist-card {
+    flex-direction: column;
+  }
+
+  .playlist-card__bottom {
+    padding: 9px;
+  }
+
+  .playlist-card__cover {
+    min-height: 113px;
+  }
+
+  .playlist-card__title {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .playlist-card__descr {
+    font-size: 9px;
+  }
+
+  .promo__cover {
+    height: 225px;
+    margin-bottom: 37px;
+  }
+
+  .promo__title {
+    margin-bottom: 40px;
+  }
+
+  .promo__title::before {
+    height: 19px;
+  }
+
+  .promo__descr {
+    line-height: 1.6;
+  }
+
+  .promo__descr:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+
+  .promo__descr:last-of-type {
+    margin-bottom: 10px;
+  }
+
+  .promo__price {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .promo__btn {
+    padding: 12px 10px;
+  }
+
+  .about-us__entity:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .guest-card__img {
+    margin-bottom: 7px;
+  }
+
+  .guest-card__title {
+    padding-right: 15px;
+    margin-bottom: 3px;
+  }
+
+  .guest-card__link {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .guest-card__descr {
+    font-size: 12px;
+    line-height: 16px;
   }
 
   .about-us__cover {
     display: none;
   }
 
+  .carousel {
+    width: 380px;
+  }
+
   .carousel__btn {
     display: none;
+  }
+
+  .form__field--area {
+    height: 149px;
+    padding: 15px 20px;
+    border-radius: 20px;
+  }
+
+  .form__field--text {
+    padding: 16px 23px;
+    border-radius: 40px;
+  }
+
+  .form__entity:not(:last-child) {
+    margin-bottom: 29px;
+  }
+
+  .form__entity.form__submit-wrapper {
+    margin-bottom: 17px;
+  }
+
+  .form__assent {
+    font-size: 9px;
+  }
+
+  .footer {
+    padding-top: 51px;
+  }
+
+  .footer__top {
+    margin-bottom: 20px;
+  }
+
+  .footer__top::before {
+    bottom: -20px;
+  }
+
+  .footer__left {
+    margin: 0;
+    padding-bottom: 54px;
+  }
+
+  .footer__right {
+    margin: 0 -32px;
+    padding: 28px var(--container-padding);
+    background-color: var(--base_color);
+  }
+
+  .footer__item:nth-child(n) {
+    flex: 0 1 44%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+
+  .footer__link {
+    font-size: 12px;
+  }
+
+  .copyright {
+    font-size: 12px;
   }
 }

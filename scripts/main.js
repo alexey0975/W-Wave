@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Carousel
   new Swiper('.carousel', {
-    slidesPerView: 2,
-    spaceBetween: 30,
+    slidesPerView: 3,
+    spaceBetween: 20,
     loop: true,
     wrapperClass: 'carousel__list',
     slideClass: 'carousel__item',
@@ -39,6 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
     breakpoints: {
       1025: {
         slidesPerView: 4,
+      },
+
+      321: {
+        slidesPerView: 2,
+        spaceBetween: 30,
       },
     },
   });
