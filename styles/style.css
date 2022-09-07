@@ -465,6 +465,7 @@ img {
   display: none;
   padding: 5px;
   height: 34px;
+  flex: 0 0 34px;
   width: 34px;
   margin-left: -5px;
   margin-right: auto;
