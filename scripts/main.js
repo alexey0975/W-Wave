@@ -1,9 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
+
   class Burger {
+    #breakpoints
+    #_elements
+    #_breakpoint
+
     constructor(selector, params) {
+      this.#breakpoints = params.breakpoints || null;
       this.btn = document.querySelector(selector);
-      [this.parrent] = document.getElementsByClassName(params.parrentClass || 'js-burger-parrent');
+      this.parrentClass = params.parrentClass || 'js-burger-parrent';
       this.elements = params.elementsClass || 'js-menu';
+
+      this.btn.style.position = 'relative';
+      this.btn.style.zIndex = '199';
 
       if (!this.parrent) throw new Error('Родительский элемент бургера не найден');
       if (!this.btn) throw new Error('Кнопка бургера не найдена');
@@ -12,8 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (params.breakpoints && Object.keys(params.breakpoints).length) {
         this.breakpoint = params.breakpoints;
-        this.elements = this.breakpoint === Infinity ?
-          params.elementsClass : params.breakpoints[this.breakpoint].elementsClass;
+        this.elements = this.elementClassPath;
 
         let currentBreakpoint = this.breakpoint;
 
@@ -21,12 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
           this.breakpoint = params.breakpoints;
 
           if (this.breakpoint !== currentBreakpoint) {
-            const classPath = this.breakpoint !== Infinity ?
-              params.breakpoints[this.breakpoint].elementsClass :
-              params.elementsClass;
-
-            this.elements.forEach(element => element.style.display = null);
-            this.elements = classPath;
+            this.elements.forEach(element => {
+              element.classList.remove('menu--closed');
+              element.style.position = null;
+              element.style.transition = null;
+              element.style.transform = null;
+            });
+            this.elements = this.elementClassPath;
 
             currentBreakpoint = this.breakpoint;
           }
@@ -38,44 +47,68 @@ document.addEventListener('DOMContentLoaded', () => {
       })
     }
 
+    get parrent() {
+      const [parrent] = document.getElementsByClassName(this.parrentClass);
+      return parrent;
+    }
+
+    get elementClassPath () {
+      return this.breakpoint ?
+        this.#breakpoints[this.breakpoint].elementsClass :
+        this.elementsClass || 'js-menu';
+    }
+
     get windowWith() {
       return window.innerWidth;
     }
 
     get elements() {
-      return this._elements;
+      return this.#_elements;
     }
 
     set elements(value) {
-      this._elements = Array.from(document.getElementsByClassName(value));
-      this._elements.forEach(element => element.style.display = 'none');
+      this.#_elements = Array.from(document.getElementsByClassName(value));
+      this.#_elements.forEach(element => {
+        element.style.position = 'absolute';
+        element.style.transform = 'translateX(-110vw)';
+        element.classList.add('menu--closed');
+      });
     }
 
     get breakpoint() {
-      return this._breakpoint;
+      return this.#_breakpoint;
     }
 
     set breakpoint(breakpoints) {
-      let currentBreakpoint = Infinity;
+      this.#_breakpoint = 0;
 
       Object.keys(breakpoints).forEach(key => {
         const breakpoint = Number(key);
         if (
-          currentBreakpoint > breakpoint &&
-          breakpoint >= this.windowWith
+          this.#_breakpoint <= breakpoint &&
+          breakpoint > this.windowWith
         ) {
-          currentBreakpoint = breakpoint;
+          this.#_breakpoint = breakpoint;
         }
       });
-
-      this._breakpoint = currentBreakpoint;
     }
 
     toggleMenu() {
       this.elements.forEach(element => {
-        if (element.style.display === 'none')
-          element.style.display = null;
-        else element.style.display = 'none';
+        if (element.classList.contains('menu--closed')) {
+          element.style.transition = 'transform 600ms ease';
+          element.style.transform = null;
+          element.classList.remove('menu--closed');
+          this.btn.classList.add('burger--close');
+          document.body.style.overflow = 'hidden';
+        }
+        else {
+          element.style.transform = 'translateX(-110vw)';
+          element.style.transition = 'transform 600ms ease';
+          element.classList.add('menu--closed');
+          this.btn.classList.remove('burger--close');
+          document.body.style.overflow = null;
+        };
       });
     }
   }
@@ -129,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  new Burger('.js-burger', {
+  const burger = new Burger('.js-burger', {
     breakpoints: {
       768: {
         elementsClass: 'js-menu-768',

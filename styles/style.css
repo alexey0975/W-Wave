@@ -417,7 +417,7 @@ img {
 }
 
 .radio-btn__descr {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   padding-left: 39px;
   font-size: var(--erlanged_font-size);
@@ -462,6 +462,7 @@ img {
 
 /* Burger */
 .burger {
+  position: relative;
   display: none;
   padding: 5px;
   height: 34px;
@@ -492,6 +493,28 @@ img {
 
 .burger:active .burger__line {
   background-color: var(--responsive_color_accent);
+}
+
+.burger--close {
+  justify-content: center;
+}
+
+.burger--close .burger__line {
+  position: absolute;
+  left: 0;
+  transition: transform 200ms linear;
+}
+
+.burger--close .burger__line:first-child {
+  transform: rotate(45deg);
+}
+
+.burger--close .burger__line:last-child {
+  transform: rotate(-45deg);
+}
+
+.burger--close .burger__line:nth-child(2) {
+  display: none;
 }
 
 /* Checkbox */
